@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+
+{% block title %} sign-up page {% endblock %}
+
+{%block content%}
+
+    <form method = "post">
+        <h3 align = "center"> SIGN UP </h3>
+
+        <div class = "form-group">
+            
+            <label for="first-name" class = form-label> Username: </label>
+            
+            <input 
+            type="text" 
+            name = "username"
+            class = "form-control" 
+            id = "username" 
+            placeholder="Enter your unique username here"
+            />
+            
+            <label for="email" class = form-label> Email: </label>
+            
+            <input 
+            type="email" 
+            name = "email" 
+            class = "form-control"
+            id = "email" 
+            placeholder="enter your email here"
+            />
+            
+            <div class = "row g-3 align-items-center">
+                
+                <div class = "col-auto">
+                    <label for = "password1" class = "col-form-label"> Password </label>
+                </div>
+
+                <div class = "col-auto">
+                    <input 
+                    type = "password" 
+                    name = "password1" 
+                    id = "password1" 
+                    class = "form-control"
+                    />
+                </div>
+                
+                <div class = "col-auto">
+                    <span id = "passwordhelp" class = "form-text"> Must be 8 to 20 chars long </span>
+                </div>
+                
+            </div>
+
+
+            <div class = "row g-3 align-items-center">
+                
+                <div class = "col-auto">
+                    <label for = "password2" class = "col-form-label"> Confirm Password </label>
+                </div>
+
+                <div class = "col-auto">
+                    <input 
+                    type = "password" 
+                    name = "password2" 
+                    id = "password2" 
+                    class = "form-control"
+                    />
+                </div>
+                
+                <div class = "col-auto">
+                    <span id = "passwordhelp" class = "form-text"> Must match the password entered </span>
+                </div>
+                
+            </div>
+
+            <button type = "submit" class = "btn btn-outline-primary"> submit </button>
+
+        </div>
+
+    </form>
+
+{%endblock%}
