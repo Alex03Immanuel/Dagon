@@ -1,10 +1,14 @@
-from flask import Blueprint
+from flask import Blueprint, render_template
 
 views = Blueprint('views',__name__)
 
 @views.route('/')
+def landing_page():
+    return "home .. sample .. login .. logoff .. sign-up"
+
+@views.route('/home')
 def home():
-    return "<h1>Home Page</h1>"
+    return render_template("home.html")
 
 @views.route('/sample')
 def sample():

@@ -10,9 +10,9 @@ def sign_up():
 def login():
     return "LOGIN"
 
-@auth.route('/logoff')
-def logoff():
-    return "LOGOFF"
+@auth.route('/logout')
+def logout():
+    return "LOGOUT"
 
 
 
