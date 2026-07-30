@@ -2,3 +2,17 @@ from flask import Blueprint
 
 auth = Blueprint('auth',__name__)
 
+@auth.route('/sign-up')
+def sign_up():
+    return "SIGN UP"
+
+@auth.route('/login')
+def login():
+    return "LOGIN"
+
+@auth.route('/logoff')
+def logoff():
+    return "LOGOFF"
+
+
+
