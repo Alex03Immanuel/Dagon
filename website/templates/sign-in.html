@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block title %} sign-in page {% endblock %}
+
+{%block content%}
+
+    <form method = "post">
+
+    <div>
+
+        <h3 align = "center"> SIGN IN </h3>
+
+        <div class="mb-3">
+            
+            <label for="email" class="form-label"> Email address </label>
+            
+            <input 
+            type="email"
+            name = "email" 
+            class="form-control" 
+            id="email">
+        
+        </div>
+            
+        <div class="mb-3">
+            
+            <label for="password" class="form-label"> Password </label>
+            
+            <input 
+            type="password"
+            name = "password" 
+            class="form-control" 
+            id="password">
+        
+        </div>
+
+        <div class = "d-grid gap-2 d-md-block">
+            <button type = "submit" class = "btn btn-outline-primary"> submit </button>
+        </div>
+
+        
+    </div>
+        
+
+    </form>
+
+{%endblock%}

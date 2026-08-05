@@ -5,75 +5,59 @@
 {%block content%}
 
     <form method = "post">
-        <h3 align = "center"> SIGN UP </h3>
+        
+        <h3 align = "center"> SIGN IN </h3>
 
-        <div class = "form-group">
+        <div class="mb-3">
             
-            <label for="first-name" class = form-label> Username: </label>
-            
-            <input 
-            type="text" 
-            name = "username"
-            class = "form-control" 
-            id = "username" 
-            placeholder="Enter your unique username here"
-            />
-            
-            <label for="email" class = form-label> Email: </label>
+            <label for="username" class="form-label"> Username </label>
             
             <input 
-            type="email" 
+            type="text"
+            name = "username" 
+            class="form-control" 
+            id="username">
+        
+        </div>
+
+        <div class="mb-3">
+            
+            <label for="email" class="form-label"> Email address </label>
+            
+            <input 
+            type="email"
             name = "email" 
-            class = "form-control"
-            id = "email" 
-            placeholder="enter your email here"
-            />
+            class="form-control" 
+            id="email">
+        
+        </div>
             
-            <div class = "row g-3 align-items-center">
-                
-                <div class = "col-auto">
-                    <label for = "password1" class = "col-form-label"> Password </label>
-                </div>
+        <div class="mb-3">
+            
+            <label for="password1" class="form-label"> Password </label>
+            
+            <input 
+            type="password"
+            name = "password1" 
+            class="form-control" 
+            id="password1">
+        
+        </div>
 
-                <div class = "col-auto">
-                    <input 
-                    type = "password" 
-                    name = "password1" 
-                    id = "password1" 
-                    class = "form-control"
-                    />
-                </div>
-                
-                <div class = "col-auto">
-                    <span id = "passwordhelp" class = "form-text"> Must be 8 to 20 chars long </span>
-                </div>
-                
-            </div>
+        <div class="mb-3">
+            
+            <label for="password2" class="form-label"> Confirm Password </label>
+            
+            <input 
+            type="password"
+            name = "password2" 
+            class="form-control" 
+            id="password2">
+        
+        </div>
 
-
-            <div class = "row g-3 align-items-center">
-                
-                <div class = "col-auto">
-                    <label for = "password2" class = "col-form-label"> Confirm Password </label>
-                </div>
-
-                <div class = "col-auto">
-                    <input 
-                    type = "password" 
-                    name = "password2" 
-                    id = "password2" 
-                    class = "form-control"
-                    />
-                </div>
-                
-                <div class = "col-auto">
-                    <span id = "passwordhelp" class = "form-text"> Must match the password entered </span>
-                </div>
-                
-            </div>
-
+        <div class = "d-grid gap-2 d-md-block">
             <button type = "submit" class = "btn btn-outline-primary"> submit </button>
-
         </div>
 
     </form>
