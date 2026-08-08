@@ -4,7 +4,7 @@ views = Blueprint('views',__name__)
 
 @views.route('/')
 def landing_page():
-    return "home .. sample .. login .. logoff .. sign-up"
+    return "home .. sample .. sign-in .. logoff .. sign-up"
 
 @views.route('/home')
 def home():
